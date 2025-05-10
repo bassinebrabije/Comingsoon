@@ -15,9 +15,9 @@ export default function ComingSoon() {
   });
 
   useEffect(() => {
-    // Set the launch date (2 months from now)
-    const launchDate = new Date();
-    launchDate.setMonth(launchDate.getMonth() + 2);
+    // Set a fixed launch date (e.g., July 10, 2025)
+    // This will be the same for all visitors regardless of when they visit
+    const launchDate = new Date('2025-07-10T00:00:00');
 
     const timer = setInterval(() => {
       const now = new Date();
